@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using AutoMapper;
 using CommandsService.Data;
+using CommandsService.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CommandsService.Controllers
@@ -18,12 +21,14 @@ namespace CommandsService.Controllers
             _mapper = mapper;
         }
 
-        [HttpPost]
-        public ActionResult TestInboundConnection()
+        [HttpGet]
+        public ActionResult<IEnumerable<PlatformReadDto>> GetPlatforms()
         {
-            Console.WriteLine("--> Inbound Post # Command Service");
+            Console.WriteLine("--> Getting Platforms from CommandService");
 
-            return Ok("Test");
+            var platformItems = _repository.GetAllPlatforms();
+
+            return Ok(_mapper.Map<IEnumerable<PlatformReadDto>>(platformItems));
         }
     }
 }
