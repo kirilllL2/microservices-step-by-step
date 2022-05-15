@@ -18,7 +18,7 @@ spec:
           ports:
             - containerPort: 15672
               name: rbmq-mgmt-port
-            - containerProt: 5672
+            - containerPort: 5672
               name: rbmq-msg-port
 ---
 apiVersion: v1
