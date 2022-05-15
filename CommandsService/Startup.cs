@@ -29,6 +29,8 @@ namespace CommandsService
         {
             services.AddDbContext<AppDbContext>(opt =>
                 opt.UseInMemoryDatabase("InMemory"));
+
+            services.AddScoped<ICommandRepo, CommandRepo>();
             
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             
