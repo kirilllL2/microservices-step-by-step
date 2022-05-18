@@ -1,11 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "C4BWXjTavRyFRvY67wHdPqO+3z51NWPExIa1SYdTu00DnD0UyXLXfOmrfGd47WDEGZInsPsXzNv2HGKCooJeNw==",
+  "dgSpecHash": "JKRa2ujykFwHUZxFwl439D9nDA28XcG4Vig0WwvKK42iESRrcu/IT7+6bLDmYAiNwwpItlJm8RiLcPoWhNqWTA==",
   "success": true,
   "projectFilePath": "D:\\microservices\\CommandsService\\CommandsService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\k-kon\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\k-kon\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\k-kon\\.nuget\\packages\\google.protobuf\\3.20.1\\google.protobuf.3.20.1.nupkg.sha512",
+    "C:\\Users\\k-kon\\.nuget\\packages\\grpc.core.api\\2.46.1\\grpc.core.api.2.46.1.nupkg.sha512",
+    "C:\\Users\\k-kon\\.nuget\\packages\\grpc.net.client\\2.46.0\\grpc.net.client.2.46.0.nupkg.sha512",
+    "C:\\Users\\k-kon\\.nuget\\packages\\grpc.net.common\\2.46.0\\grpc.net.common.2.46.0.nupkg.sha512",
+    "C:\\Users\\k-kon\\.nuget\\packages\\grpc.tools\\2.46.1\\grpc.tools.2.46.1.nupkg.sha512",
     "C:\\Users\\k-kon\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\k-kon\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.8\\microsoft.entityframeworkcore.5.0.8.nupkg.sha512",
     "C:\\Users\\k-kon\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.8\\microsoft.entityframeworkcore.abstractions.5.0.8.nupkg.sha512",
