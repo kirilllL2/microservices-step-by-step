@@ -1,6 +1,8 @@
 using System;
+using System.IO;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -71,6 +73,11 @@ namespace PlatformService
             {
                 endpoints.MapControllers();
                 endpoints.MapGrpcService<GrpcPlatformService>();
+
+                endpoints.MapGet("/protos/platforms.proto", async context =>
+                {
+                    await context.Response.WriteAsync(File.ReadAllText("Protos/platforms.proto"));
+                });
             });
 
             PrepDb.PrepPopulation(app, env.IsProduction());
